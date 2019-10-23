@@ -15,9 +15,13 @@ Code Logic:
 
 How to use the code:
 1)Install ROS
+
 2)Create catkin_ws
+
 3)In src folder create a file
+
 4)Then clone this to that file
+
 5)Then come back to catkin_ws folder and then run command 'catkin_make' in terminal
 6)in new terminal run roscore
 7)in another terminal type command :
