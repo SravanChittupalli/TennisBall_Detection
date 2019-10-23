@@ -15,18 +15,7 @@ find_package(catkin REQUIRED COMPONENTS
   message_generation
 )
 
-add_message_files(
-   FILES
-   IoTSensor.msg
- )
-
-##Generate services in the 'srv' folder
- add_service_files(
-   FILES
-   addTwoInt.srv
- )
-
- generate_messages(
+generate_messages(
    DEPENDENCIES
    std_msgs
  )
@@ -139,17 +128,6 @@ include_directories(
 # include
   ${catkin_INCLUDE_DIRS}
 )
-
-
-add_executable(talker1 src/talkerlistener/talker1.cpp)
-target_link_libraries(talker1 ${catkin_LIBRARIES})
-add_dependencies(talker1 ros_basic_tutorials_generate_message_cpp)
-
-
-add_executable(listener src/talkerlistener/listener.cpp)
-target_link_libraries(listener ${catkin_LIBRARIES})
-add_dependencies(listener  ros_basic_tutorials_generate_message_cpp)
-
 
 
 ## Declare a C++ library
