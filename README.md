@@ -14,19 +14,20 @@ Code Logic:
 7) draw the contour and circle
 
 How to use the code:
-1)Install ROS
-2)Create catkin_ws
-3)In src folder create a file
-4)Then clone this to that file
-5)Then come back to catkin_ws folder and then run command 'catkin_make' in terminal
-6)in new terminal run roscore
-7)in another terminal type command :
+1.Install ROS
+2.Create catkin_ws
+3.In src folder create a file
+4.Then clone this to that file
+5.Then come back to catkin_ws folder and then run command 'catkin_make' in terminal
+6.in new terminal run roscore
+7.in another terminal type command :
 
                       'rosrun usb_cam usb_cam_node _pixel_format:=yuyv'
                       
   This will switch on the laptop cam and message will be published 
 
-8)In a new terminal type:
+8.In a new terminal type:
+
                       'rosrun ($FILE_NAME)  tennisball_detection.py'
                       
 
